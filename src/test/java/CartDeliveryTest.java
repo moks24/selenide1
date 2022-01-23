@@ -20,9 +20,6 @@ public class CartDeliveryTest {
         $("[class='checkbox__box']").click();
         $("[class='button__text']").click();
         $("[data-test-id='notification']").shouldBe(visible, Duration.ofSeconds(15));
-
-
-
     }
 
 }
