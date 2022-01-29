@@ -18,18 +18,18 @@ public class CartDeliveryTest {
 
     @Test
     public void shouldFillInTheForm(){
-//        String planningDate = generateDate(4);
+        String planningDate = generateDate(4);
         open("http://localhost:9999/");
-//        $("[data-test-id='city'] input").val("Оренбург");
-//        $("[type='tel']").sendKeys(Keys.CONTROL + "a");
-//        $("[type='tel']").sendKeys(Keys.BACK_SPACE);
-//        $("[type='tel']").val(planningDate);
-//        $("[data-test-id='name'] input").val("Иванов Андрей");
-//        $("[name='phone']").val("+79225558899");
-//        $("[class='checkbox__box']").click();
-//        $("[class='button__text']").click();
-//        $("[class='notification__content']").shouldBe(visible, Duration.ofSeconds(15))
-//                .shouldHave(exactText("Встреча успешно забронирована на " + planningDate));
+        $("[data-test-id='city'] input").val("Оренбург");
+        $("[type='tel']").sendKeys(Keys.CONTROL + "a");
+        $("[type='tel']").sendKeys(Keys.BACK_SPACE);
+        $("[type='tel']").val(planningDate);
+        $("[data-test-id='name'] input").val("Иванов Андрей");
+        $("[name='phone']").val("+79225558899");
+        $("[class='checkbox__box']").click();
+        $("[class='button__text']").click();
+        $("[class='notification__content']").shouldBe(visible, Duration.ofSeconds(15))
+                .shouldHave(exactText("Встреча успешно забронирована на " + planningDate));
     }
 
 }
